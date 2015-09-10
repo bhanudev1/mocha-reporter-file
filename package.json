@@ -1,0 +1,25 @@
+{
+  "name": "mocha-reporter-file",
+  "version": "0.0.1",
+  "description": "Logs mocha tests output to a file",
+  "keywords": [
+    "mocha",
+    "reporter",
+    "logs"
+  ],
+  "author": {
+    "name": "Bhanu Dev Jaiswal",
+    "email": "bhanudev1@gmail.com"
+  },
+  "main" : "index.js",
+  "repository": {
+    "type": "http",
+    "url": "https://github.com/bhanudev1/mocha-reporter-file.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "mocha": "*"
+  }
+}

@@ -1,11 +1,11 @@
 var fs = require('fs');
 var d = new Date();
 var dir = './logs';
-if (!fs.existsSync(dir)){
-    fs.mkdirSync(dir);
+if (!fs.existsSync(dir)) {
+  fs.mkdirSync(dir);
 }
 
-var logFilePath =  dir + '/log-' + d.toString().replace(/ /g, '-').replace(/:/g, '') +'.txt';
+var logFilePath = dir + '/log-' + d.toString().replace(/ /g, '-').replace(/:/g, '') + '.txt';
 
 var fileStream = fs.createWriteStream(logFilePath);
 var reporter = function (runner) {
@@ -14,7 +14,11 @@ var reporter = function (runner) {
 
 var console = {
   log: function (message) {
-    fileStream.write(message + "\r\n");
+    fileStream.write(message + '\r\n');
+  },
+  failed: function () {
+    var failedFileStream = fs.createWriteStream(dir + '/failed.txt');
+    failedFileStream.write('test failed');
   }
 };
 
@@ -59,6 +63,9 @@ reporter.prototype.initialize = function (runner) {
     console.log('# tests ' + (passes + failures));
     console.log('# pass ' + passes);
     console.log('# fail ' + failures);
+    if (failures > 0) {
+      console.failed();
+    }
   });
 };
 

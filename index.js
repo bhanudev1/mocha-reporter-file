@@ -1,12 +1,20 @@
 var fs = require('fs');
-var filePath = "log.txt";
+var d = new Date();
+var dir = './logs';
+if (!fs.existsSync(dir)){
+    fs.mkdirSync(dir);
+}
+
+var logFilePath =  dir + '/log-' + d.toString().replace(/ /g, '-').replace(/:/g, '') +'.txt';
+
+var fileStream = fs.createWriteStream(logFilePath);
 var reporter = function (runner) {
   this.initialize.call(this, runner);
 };
 
 var console = {
   log: function (message) {
-    fs.write(filePath, message);
+    fileStream.write(message + "\r\n");
   }
 };
 

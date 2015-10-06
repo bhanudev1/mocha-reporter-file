@@ -1,6 +1,6 @@
 {
   "name": "mocha-reporter-file",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Logs mocha tests output to a file",
   "keywords": [
     "mocha",

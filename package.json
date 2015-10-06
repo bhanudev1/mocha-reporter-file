@@ -13,8 +13,8 @@
   },
   "main": "index.js",
   "repository": {
-    "type": "http",
-    "url": "https://github.com/bhanudev1/mocha-reporter-file.git"
+    "type": "git",
+    "url": "git+https://github.com/bhanudev1/mocha-reporter-file.git"
   },
   "dependencies": {
     "mocha": "^2.3.3"

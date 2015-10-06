@@ -14,9 +14,10 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhanudev1/mocha-reporter-file.git"
+    "url": "git://github.com/bhanudev1/mocha-reporter-file.git"
   },
   "dependencies": {
     "mocha": "^2.3.3"
-  }
+  },
+  "readme": "ERROR: No README data found!"
 }

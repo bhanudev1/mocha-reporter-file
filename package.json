@@ -11,15 +11,12 @@
     "name": "Bhanu Dev Jaiswal",
     "email": "bhanudev1@gmail.com"
   },
-  "main" : "index.js",
+  "main": "index.js",
   "repository": {
     "type": "http",
     "url": "https://github.com/bhanudev1/mocha-reporter-file.git"
   },
-  "engines": {
-    "node": "*"
-  },
   "dependencies": {
-    "mocha": "*"
+    "mocha": "^2.3.3"
   }
 }

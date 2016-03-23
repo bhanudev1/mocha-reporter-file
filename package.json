@@ -15,7 +15,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bhanudev1/mocha-reporter-file.git"
+    "url": "git://github.com/chandrachivukula/mocha-reporter-file.git"
   },
   "dependencies": {
     "mocha": "^2.3.3",

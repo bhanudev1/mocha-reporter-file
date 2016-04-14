@@ -1,23 +1,25 @@
 {
   "name": "mocha-reporter-file",
-  "version": "0.0.6",
-  "description": "Logs mocha tests output to a file",
+  "version": "0.0.7",
+  "description": "Logs mocha tests output to a file + add istanbul coverage settings",
   "keywords": [
     "mocha",
     "reporter",
-    "logs"
+    "logs",
+    "istanbul"
   ],
   "author": {
-    "name": "Bhanu Dev Jaiswal",
-    "email": "bhanudev1@gmail.com"
+    "name": "Chandra Chivukula",
+    "email": "chandrachiv@outlook.com"
   },
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bhanudev1/mocha-reporter-file.git"
+    "url": "git://github.com/chandrachivukula/mocha-reporter-file.git"
   },
   "dependencies": {
-    "mocha": "^2.3.3"
+    "mocha": "^2.3.3",
+    "istanbul": "0.3.14"    
   },
-  "readme": "ERROR: No README data found!"
+  "readme": "readme.md"
 }
